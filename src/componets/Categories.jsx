@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../App.css';
 
 
 const Categories = () => {
@@ -36,16 +37,16 @@ const Categories = () => {
 
       {/* Filter Buttons */}
       <div className="text-center mb-4">
-        <button className="btn btn-danger m-2" onClick={() => filterItems("All")}>
+        <button className="btn btn-danger m-2" style={{fontFamily:'ui-serif',fontSize:'18px'}} onClick={() => filterItems("All")}>
           All
         </button>
-        <button className="btn btn-success m-2" onClick={() => filterItems("washing machines")}>
+        <button className="btn btn-success m-2" style={{fontFamily:'ui-serif',fontSize:'18px'}} onClick={() => filterItems("washing machines")}>
           Washing Machines
         </button>
-        <button className="btn btn-success m-2" onClick={() => filterItems("mobiles")}>
+        <button className="btn btn-success m-2" style={{fontFamily:'ui-serif',fontSize:'18px'}} onClick={() => filterItems("mobiles")}>
           Mobiles
         </button>
-        <button className="btn btn-success m-2" onClick={() => filterItems("electronics")}>
+        <button className="btn btn-success m-2" style={{fontFamily:'ui-serif',fontSize:'18px'}} onClick={() => filterItems("electronics")}>
           Electronics
         </button>
       </div>
@@ -56,7 +57,7 @@ const Categories = () => {
             key={item.id}
             className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex"
           >
-            <div className="card w-100 text-center shadow-sm h-100">
+            <div className="card w-100 text-center shadow-sm h-100" >
               <img
                 src={item.src}
                 className="card-img-top p-3"
@@ -64,9 +65,9 @@ const Categories = () => {
                 style={{ height: "160px", objectFit: "contain" }}
               />
               <div className="card-body">
-                <h6 className="card-title">{item.name}</h6>
-                <p className="mb-1">Price: ₹{item.price}</p>
-                <p className="mb-0">
+                <h5 className="card-title" style={{fontFamily:'ui-serif'}}>{item.name}</h5>
+                <p className="mb-1" style={{fontFamily:'ui-serif',fontSize:'18px'}}>Price: <span style={{fontFamily:'ui-serif', color:'red',fontSize:'20px'}}>₹{item.price}/-</span> </p>
+                <p className="mb-0" style={{fontFamily:'ui-serif', fontSize:'18px'}}>
                   Rating: {item.star}
                   <img
                     src="../assets/star.svg"
