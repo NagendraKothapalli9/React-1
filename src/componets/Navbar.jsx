@@ -17,27 +17,27 @@ const Navbar = () => {
     <div className="collapse navbar-collapse text-white" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-white">
         <li className="nav-item ">
-          <a className="nav-link active text-danger ms-5" aria-current="page" href="#">Home</a>
+          <link className="nav-link active text-danger ms-5" aria-current="page" href="#">Home</link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-white ms-5" href="#">About</a>
+          <link className="nav-link text-white ms-5" href="#">About</link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-white ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <link className="nav-link dropdown-toggle text-white ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Products
-          </a>
+          </link>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Mobiles</a></li>
-            <li><a className="dropdown-item" href="#">Washing Machine</a></li>
+            <li><link className="dropdown-item" href="#">Mobiles</link></li>
+            <li><link className="dropdown-item" href="#">Washing Machine</link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Fashion Ware</a></li>
+            <li><link className="dropdown-item" href="#">Fashion Ware</link></li>
           </ul>
           
         </li>
         
       </ul>
-      <a> <img className='ms-5' src="../assets/cart.svg" alt="" /></a>
-      <a><img  className='ms-3 me-5' src="../assets/account.svg" alt="" /></a> 
+      <link> <img className='ms-5' src="../assets/cart.svg" alt="" /></link>
+      <link><img  className='ms-3 me-5' src="../assets/account.svg" alt="" /></link> 
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <img src="../assets/search.svg" alt="" />
